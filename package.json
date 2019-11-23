@@ -1,0 +1,38 @@
+{
+  "name": "@elijahjcobb/prom-type",
+  "version": "0.1.0",
+  "description": "A type definition for the parameters in a promise.",
+  "main": "js/index",
+  "types": "dts/index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run compile",
+    "compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
+    "watch": "tsc -w -p .",
+    "clean": "rm -rf js && rm -rf dts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elijahjcobb/prom-type.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["promise", "type", "handler", "parameter"],
+  "author": "Elijah Cobb <elijah@elijahcobb.com> (https://elijahcobb.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elijahjcobb/prom-type/issues"
+  },
+  "homepage": "https://github.com/elijahjcobb/prom-type#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "latest",
+    "tslint": "latest"
+  },
+  "files": [
+    "js",
+    "dts"
+  ]
+}
