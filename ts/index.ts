@@ -20,6 +20,6 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
-export type PromHandler<X, Y = any> = (resolve: (value?: X | PromiseLike<X> | undefined) => void, reject: (reason?: Y) => void) => void;
-export type PromResolve<T> = (value?: T | PromiseLike<T> | undefined) => void;
-export type PromReject<T = any> = (reason?: T) => void;
+export type PromHandler<X, Y = any> = (resolve: (value: X | PromiseLike<X>) => void, reject: (reason: Y) => void) => void;
+export type PromResolve<T> = (value: T | PromiseLike<T>) => void;
+export type PromReject<T = any> = (reason: T) => void;
